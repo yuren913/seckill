@@ -24,7 +24,7 @@ import java.util.List;
  */
 
 @Controller
-@RequestMapping({ "/", "/seckill" ,""})//url:/模块/资源/{id}/细分
+@RequestMapping({ "/", "/seckill" ,""})//url:/模块/资源/{id}/细分， 第一个斜线可以部署后从项目目录开始拦截
 public class SeckillController {
 
     private static final Logger LOG = LoggerFactory.getLogger(SeckillController.class);
