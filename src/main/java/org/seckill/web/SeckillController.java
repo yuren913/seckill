@@ -39,9 +39,9 @@ public class SeckillController {
     public String list(Model model) {
         //list.jsp + model = ModelAndView
         //获取列表页
-    	System.out.println("/list ");  
-    	List<Seckill> list = seckillService.getSeckillList();
-    	System.out.println("/list "+list);  
+        LOG.debug("Get the list");
+        List<Seckill> list = seckillService.getSeckillList();
+        LOG.debug("Get the list - results - "+list);
         model.addAttribute("list", list);
 
         return "list";
